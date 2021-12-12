@@ -9,10 +9,10 @@ jobs:
     - name: Synchronize secrets
       uses: google/secrets-sync-action@master
       with:
-        dry_run: false
+        dry_run: true
         github_token: ${{ secrets.GIT_S_SYNC }}
         secrets: |
-          ^GIT_PAT$
+          ^GIT_PAT
           ^GPG_.*
         repositories: |
           ^tech10/ipaddr$
