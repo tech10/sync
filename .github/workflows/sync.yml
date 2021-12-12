@@ -9,7 +9,8 @@ jobs:
     - name: Synchronize secrets
       uses: google/secrets-sync-action@master
       with:
-        dry_run: true
+        dry_run: false
+        delete: false
         github_token: ${{ secrets.GIT_S_SYNC }}
         secrets: |
           ^GIT_PAT
