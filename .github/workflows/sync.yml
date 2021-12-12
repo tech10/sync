@@ -4,6 +4,7 @@ on:
 
 jobs:
   sync:
+    runs-on: ubuntu-latest
     steps:
     - name: Synchronize secrets
       uses: google/secrets-sync-action@master
