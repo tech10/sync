@@ -11,7 +11,7 @@ jobs:
         dry_run: true
         github_token: ${{ secrets.GIT_S_SYNC }}
         secrets: |
-          ^GITHUB_PAT$
+          ^GIT_PAT$
           ^GPG_.*
         repositories: |
           ^tech10/ipaddr$
