@@ -18,6 +18,8 @@ jobs:
         repositories: |
           ^tech10/ipaddr$
           ^tech10/teamtalk_bot$
+          ^tech10/panichandler$
+          ^tech10/nvdaRemoteServer$
       env:
         GIT_PAT: ${{ secrets.GIT_PAT }}
         GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
