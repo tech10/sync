@@ -6,7 +6,7 @@ jobs:
   sync:
     steps:
     - name: Synchronize secrets
-      uses: google/secrets-sync-action
+      uses: google/secrets-sync-action@master
       with:
         dry_run: true
         github_token: ${{ secrets.GIT_S_SYNC }}
