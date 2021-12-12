@@ -1,0 +1,23 @@
+name: go version sync
+on:
+  push:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Synchronize Go version
+      uses: google/secrets-sync-action@master
+      with:
+        dry_run: false
+        delete: false
+        github_token: ${{ secrets.GIT_S_SYNC }}
+        secrets: |
+          ^GO_LATEST
+        repositories: |
+          ^tech10/ipaddr$
+          ^tech10/teamtalk_bot$
+          ^tech10/panichandler$
+          ^tech10/nvdaRemoteServer$
+      env:
+        GO_LATEST: 1.17.5
