@@ -1,0 +1,17 @@
+name: secrets sync
+on:
+  push:
+
+jobs:
+  sync:
+    steps:
+    - name: Synchronize secrets
+      uses: google/secrets-sync-action
+      with:
+        dry_run: true
+        github_token: ${{ secrets.GIT_S_SYNC }}
+        secrets: |
+          ^GITHUB_PAT$
+          ^GPG_.*
+        repositories: |
+          ^tech10/ipaddr$
