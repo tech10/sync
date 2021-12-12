@@ -16,7 +16,7 @@ jobs:
           ^GPG_.*
         repositories: |
           ^tech10/ipaddr$
-        env: |
-          GIT_PAT: ${{ secrets.GIT_PAT }}
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+      env: |
+        GIT_PAT: ${{ secrets.GIT_PAT }}
+        GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
