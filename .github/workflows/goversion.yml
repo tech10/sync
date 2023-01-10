@@ -20,4 +20,4 @@ jobs:
           ^tech10/panichandler$
           ^tech10/nvdaRemoteServer$
       env:
-        GO_LATEST: 1.19.4
+        GO_LATEST: 1.19.5
