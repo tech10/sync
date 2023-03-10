@@ -17,6 +17,7 @@ jobs:
           ^GPG_.*
         repositories: |
           ^tech10/ipaddr$
+          ^tech10/ipify-api$
           ^tech10/teamtalk_bot$
           ^tech10/panichandler$
           ^tech10/nvdaRemoteServer$
